@@ -1,0 +1,83 @@
+body {
+    font-family: 'Lobster', cursive;
+    background: url('images/image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 35px;
+    color: rgb(255, 0, 174);
+}
+
+.hh {
+    -webkit-text-stroke: 2px #71004f;
+    font-weight: 900;
+}
+
+.pp {
+    -webkit-text-stroke: 2px #71004f;
+    font-size: 50px;
+    font-style: oblique;
+    font-weight: 800;
+}
+
+.container {
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+    height: 280px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative; /* Important for moving buttons */
+}
+
+.buttons button {
+    background-color: #ff4d79;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #7c1f37;
+    transform: scale(1.1);
+}
+
+#no-button:hover {
+    animation: shake 0.3s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+}
+#yesButton {
+    width: 100px; /* Default size */
+    height: 50px;
+    transition: all 0.3s ease-in-out; /* Smooth transition for button size */
+}
+
